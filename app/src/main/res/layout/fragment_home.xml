@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="742dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        tools:context=".fragments.HomeFragment">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="1"
+            android:background="@drawable/establ_bg"
+            android:elevation="22dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/establecimientoSeleccionado"
+                android:layout_width="360dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:elevation="22dp"
+
+
+                android:gravity="end"
+                android:text="Establ"
+                android:textAlignment="textEnd"
+                android:textColor="@color/white"
+                android:textSize="34sp" />
+
+            <!--
+                        <Spinner
+                            android:id="@+id/spinnerEstablecimientos"
+                            style="@style/Widget.AppCompat.Spinner.Underlined"
+                            android:layout_width="158dp"
+                            android:layout_height="74dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:minHeight="48dp"
+                            android:popupBackground="@android:drawable/dialog_holo_light_frame"
+                            android:popupElevation="10dp"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+            -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:layout_weight="1"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/category_bg_2"
+            android:elevation="22dp"
+            android:gravity="center">
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="168dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_weight="1"
+                android:elevation="22dp"
+                android:gravity="center_horizontal"
+                android:text="Explore las categorías"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="85dp"
+                android:layout_height="53dp"
+                android:layout_weight="1"
+
+                android:src="@drawable/ic_baseline_search_24" />
+
+            <Spinner
+                android:id="@+id/spinnerCategorias"
+                style="@android:style/Widget.Holo.Spinner"
+                android:layout_width="186dp"
+                android:layout_height="68dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:minHeight="48dp"
+                android:popupBackground="@android:drawable/dialog_holo_light_frame"
+                android:popupElevation="10dp"
+                android:spinnerMode="dropdown"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp"
+                app:cardUseCompatPadding="true"
+                tools:listitem="@layout/item_product">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/floatingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/floating_button"
+        android:text="Añadir al carrito" />
+
+    <ImageView
+        android:id="@+id/imgEstabl"
+        android:layout_width="wrap_content"
+        android:layout_height="98dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_launcher_background" />
+
+</FrameLayout>
+

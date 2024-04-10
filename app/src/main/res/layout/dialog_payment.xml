@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="168dp"
+        android:layout_height="86dp"
+        android:src="@drawable/logo_paypal" />
+
+    <TextView
+        android:id="@+id/amountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="71dp"
+        android:layout_toRightOf="@id/imageView2"
+        android:text="Amount to Pay"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/payButton"
+        android:layout_width="116dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/amountTextView"
+        android:layout_marginLeft="59dp"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@id/imageView2"
+        android:text="Pay" />
+
+</RelativeLayout>
+
+
+
+
